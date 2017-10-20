@@ -1,0 +1,56 @@
+h1 {
+	color: red;
+}
+
+.hello {
+	color: blue;
+}
+
+[world] {
+	color: green;
+}
+
+#foo {
+	color: goldenrod;
+}
+
+h2:hover {
+	opacity: 0.5;
+}
+
+h3::first-letter {
+	color: red;
+}
+
+p,
+span {
+	background-color: #eee;
+}
+
+div span {
+	font-style: italic;
+}
+
+div>p {
+	border: 1px solid black;
+}
+
+div .hello {
+	text-decoration: underline;
+}
+
+div.hello {
+	text-decoration: line-through;
+}
+
+div[foo]  {
+	background-color: hsl(240, 100%, 90%);
+}
+
+div[foo="bar"]  {
+	background-color: hsl(120, 100%, 90%);
+}
+
+div[foo="bar"].hello  {
+	background-color: hsl(0, 100%, 90%);
+}

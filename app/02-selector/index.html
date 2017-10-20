@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Selector</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<h1>Hello World !</h1>
+		<div class="hello">Class</div>
+		<div world>Attribute</div>
+		<div id="foo">Anchor</div>
+		<h2 >Pseudo Class</h2>
+		<h3 >Pseudo Element</h3>
+		<span>This is a span</span>
+		<p>This is a paragraph</p>
+
+		<div>
+			<span>
+				This is a span inside a div.
+				<span>
+					And a span inside a span.
+				</span>
+			</span>
+		</div>
+
+		<div>
+			<p>
+				This is a paragraph directly under a div.
+			</p>
+		</div>
+
+		<div>
+			<div>
+				<div>
+					<code class="hello">This is a class hello with div ancesters.</code>
+				</div>
+			</div>
+		</div>
+
+		<div class="hello">This a div with class hello.</div>
+
+		<div foo>This is a div with attribute foo</div>
+		<div foo="bar">This is a div with attribute foo and value bar</div>
+		<div foo="bar" class="hello">This is a div with attribute foo and value bar, and class hello</div>
+
+	</body>
+</html>
