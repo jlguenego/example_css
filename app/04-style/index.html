@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Selector</title>
+	<link rel="stylesheet" href="style.css" />
+	<style>
+		span {
+			font-size: 50px;
+		}
+	</style>
+</head>
+
+<body>
+	<style>
+		span {
+			font-size: 60px;
+		}
+	</style>
+	<span style="font-weight: bold;">There are many ways to insert CSS.</span>
+	<style>
+		span {
+			display: block;
+			font-size: 30px;
+			padding: 20px;
+		}
+	</style>
+	<script>
+		// add style
+		document.querySelector('span').style.fontStyle = 'italic';
+
+		// add class
+		var style = document.createElement('style');
+		style.type = 'text/css';
+		style.innerHTML = 'span { border: 1px solid red; }';
+		document.getElementsByTagName('head')[0].appendChild(style);
+	</script>
+</body>
+
+</html>
