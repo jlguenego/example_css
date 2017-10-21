@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Selector</title>
+	<link rel="stylesheet" href="style.css" />
+</head>
+
+<body id="foo">
+	<span class="bar" id="hello" foo>Priority is concatenation of a + b + c + d</span>
+	<ol>
+		<li> a: 1 if style, 0 if selector</li>
+		<li> b: number of # selector (id selector)</li>
+		<li> c: number of class and attribute and pseudo-classes selector </li>
+		<li> c: number of element and  pseudo-element selector </li>
+		<li> See <a href="https://stackoverflow.com/questions/4072365/css-understanding-the-selectors-priority-specificity">this link</a>.</li>
+		<li> Example: <code>body#foo>span#hello.bar[foo]</code> 0222</li>
+	</ol>
+</body>
+
+</html>

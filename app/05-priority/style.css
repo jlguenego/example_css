@@ -1,0 +1,31 @@
+body#foo>span#hello.bar[foo] {
+	font-size: 70px;
+}
+
+body>span#hello {
+	font-size: 70px;
+}
+
+body span#hello {
+	font-size: 80px;
+}
+
+span#hello {
+	font-size: 60px;
+}
+
+#hello {
+	font-size: 30px;
+}
+
+.bar {
+	font-size: 40px;
+}
+
+[foo] {
+	font-size: 50px;
+}
+
+span {
+	font-size: 20px;
+}
