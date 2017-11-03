@@ -1,5 +1,5 @@
 body#foo>span#hello.bar[foo] {
-	font-size: 70px;
+	font-size: 20px;
 }
 
 body>span#hello {

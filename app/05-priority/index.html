@@ -2,23 +2,55 @@
 <html>
 
 <head>
-	<title>Selector</title>
+	<title>Priotity</title>
+	<style>
+		body#foo>span#hello.bar[foo] {
+			font-size: 50px;
+		}
+	</style>
 	<link rel="stylesheet" href="style.css" />
 </head>
 
 <body id="foo">
+	<h1>Specificty of a selector</h1>
+	<h2>rule</h2>
 	<span class="bar" id="hello" foo>Priority is concatenation of a + b + c + d</span>
 	<ol>
 		<li> a: 1 if style, 0 if selector</li>
 		<li> b: number of # selector (id selector)</li>
 		<li> c: number of class and attribute and pseudo-classes selector </li>
-		<li> c: number of element and  pseudo-element selector </li>
-		<li> See <a href="https://stackoverflow.com/questions/4072365/css-understanding-the-selectors-priority-specificity">this link</a>.</li>
-		<li> Example: <code>body>div span#hello.bar[foo][disabled]::after</code> 0134</li>
+		<li> c: number of element and pseudo-element selector </li>
+
 	</ol>
-	<input name="selector" value="body>div span#hello.bar[foo][disabled]::after"><br>
-	Priority: <priority></priority><br>
-	<script src="main.js" ></script>
+	<ul>
+		<li> See
+			<a href="https://stackoverflow.com/questions/4072365/css-understanding-the-selectors-priority-specificity">this link</a>.</li>
+		<li> Example:
+			<code>body>div span#hello.bar[foo][disabled]::after</code> Priority: 0134</li>
+		<li>For equals priority, the last specified overwrite the first specified.</li>
+	</ul>
+
+	<h2>Selector priority calculator</h2>
+	<input name="selector" value="body>div span#hello.bar[foo][disabled]::after">
+	<br> Priority:
+	<priority></priority>
+	<br>
+	<h1>User vs Author</h1>
+	<ol>
+		<li>Author: settings indicated in the web pages</li>
+		<li>User: user settings of the browser</li>
+		<li>User agent: default rules of the browser</li>
+	</ol>
+	<ul>
+		<li>See
+			<a href="https://stackoverflow.com/questions/18252356/what-is-the-difference-between-default-user-and-author-style-sheets">this link</a>.</li>
+		</li>
+	</ul>
+	<h1>!important</h1>
+
+	Note: the official rules are
+	<a href="https://www.w3.org/TR/CSS2/cascade.html">here</a>.
+	<script src="main.js"></script>
 </body>
 
 </html>

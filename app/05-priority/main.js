@@ -2,7 +2,8 @@
     'use strict';
 
     document.addEventListener('DOMContentLoaded', computePriority);
-    document.querySelector('input').addEventListener('input', computePriority);
+    var input = document.querySelector('input');
+    input.addEventListener('input', computePriority);
 
     function computePriority() {
         var value = input.value;
