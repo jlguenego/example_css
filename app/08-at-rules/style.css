@@ -10,6 +10,8 @@
 	}
 }
 
+/* Supports is not supported by IE11 */
+
 @keyframes cool-anim {
 	0%   {opacity: 0; background-color: hsl(0, 0%, 90%); transform: scale(0.5) rotate(-179deg);}
 	30%  {opacity: 1; background-color: hsl(0, 0%, 90%); transform: rotate(0deg); }

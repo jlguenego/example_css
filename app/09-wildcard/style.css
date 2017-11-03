@@ -1,0 +1,21 @@
+li {
+	font-weight: bold;
+	font-size: 2em;
+}
+
+/* Starts with */
+li[class^="This"] {
+	color: green;
+}
+
+/* Contains */
+li[class*="foo"] {
+	color: red;
+}
+
+/* Ends with */
+li[class$="..."] {
+	color: gray;
+}
+
+/* See this reference : https://www.w3schools.com/cssref/css_selectors.asp */
