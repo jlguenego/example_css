@@ -1,14 +1,42 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Hello World !</title>
-		<link rel="stylesheet" href="style.css" />
-	</head>
-	<body>
-		<h1>Hello World !</h1>
-		<h1>Hello World !</h1>
-		<h1>Hello World !</h1>
-		<h1>Hello World !</h1>
-		<h1>Hello World !</h1>
-	</body>
+
+<head>
+	<title>Hello World !</title>
+	<link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+	<select>
+		<option value="block">block</option>
+		<option value="inline-block">inline-block</option>
+		<option value="inline">inline</option>
+		<option value="table">table</option>
+		<option value="inline-table">inline-table</option>
+		<option value="none">none</option>
+		<option value="flex">flex</option>
+		<option value="inline-flex">inline-flex</option>
+	</select>
+	<br> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+	dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+	book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+	It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with
+	desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+	<h1>Hello World!</h1>
+	Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
+	text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+	It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+	It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with
+	desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+	<script>
+		var select = document.querySelector('select');
+		select.addEventListener('input', onSelect);
+
+		function onSelect() {
+			console.log('onSelect', select.value);
+			document.querySelector('h1').style.display = select.value;
+		}
+	</script>
+</body>
+
 </html>
