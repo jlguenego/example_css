@@ -29,3 +29,10 @@ span#hello {
 span {
 	font-size: 20px;
 }
+
+input {
+	width: 100%;
+}
+priority {
+	font-family: fixed;
+}
