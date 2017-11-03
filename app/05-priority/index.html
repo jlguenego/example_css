@@ -2,7 +2,7 @@
 <html>
 
 <head>
-	<title>Priotity</title>
+	<title>Priority</title>
 	<style>
 		body#foo>span#hello.bar[foo] {
 			font-size: 50px;
@@ -14,12 +14,12 @@
 <body id="foo">
 	<h1>Specificty of a selector</h1>
 	<h2>rule</h2>
-	<span class="bar" id="hello" foo>Priority is concatenation of a + b + c + d</span>
+	<span class="bar" id="hello" foo>Specificity is the concatenation of a + b + c + d</span>
 	<ol>
 		<li> a: 1 if style, 0 if selector</li>
 		<li> b: number of # selector (id selector)</li>
 		<li> c: number of class and attribute and pseudo-classes selector </li>
-		<li> c: number of element and pseudo-element selector </li>
+		<li> d: number of element and pseudo-element selector </li>
 
 	</ol>
 	<ul>
@@ -30,10 +30,10 @@
 		<li>For equals priority, the last specified overwrite the first specified.</li>
 	</ul>
 
-	<h2>Selector priority calculator</h2>
+	<h2>Selector specificity calculator</h2>
 	<input name="selector" value="body>div span#hello.bar[foo][disabled]::after">
-	<br> Priority:
-	<priority></priority>
+	<br> Specificity:
+	<specificity></specificity>
 	<br>
 	<h1>User vs Author</h1>
 	<ol>
@@ -46,7 +46,10 @@
 			<a href="https://stackoverflow.com/questions/18252356/what-is-the-difference-between-default-user-and-author-style-sheets">this link</a>.</li>
 		</li>
 	</ul>
-	<h1>!important</h1>
+	<h1>!important rule</h1>
+	<ul>
+		<li>Overwrite any specificity.</li>
+	</ul>
 
 	Note: the official rules are
 	<a href="https://www.w3.org/TR/CSS2/cascade.html">here</a>.

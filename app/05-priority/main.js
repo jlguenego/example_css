@@ -16,7 +16,7 @@
         console.log('c', c);
         var d = extractElementAndPseudoElement(value);
         console.log('d', d);
-        document.querySelector('priority').innerHTML = `${a}${b}${c}${d}`;
+        document.querySelector('specificity').innerHTML = `${a}${b}${c}${d}`;
     }
 
     function extractId(str) {
@@ -32,7 +32,7 @@
         str.replace(/\./g, function() {
             result++;
         }).length;
-        str.replace(/:[^:]/g, function() {
+        str.replace(/[^:]:[^:]/g, function() {
             result++;
         }).length;
         return result;
