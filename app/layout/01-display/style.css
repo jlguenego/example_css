@@ -1,0 +1,12 @@
+h1 {
+	border: 1px solid black;
+}
+
+h1:nth-child(1) {
+	
+	background-color: #eee;
+}
+
+h1:nth-child(2) {
+	background-color: #ddd;
+}
