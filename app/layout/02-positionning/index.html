@@ -2,21 +2,15 @@
 <html>
 
 <head>
-	<title>Display</title>
+	<title>Positionning</title>
 	<link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
 	<select>
-		<option value="block">block</option>
-		<option value="inline-block">inline-block</option>
-		<option value="inline">inline</option>
-		<option value="table">table</option>
-		<option value="inline-table">inline-table</option>
-		<option value="none">none</option>
-		<option value="flex">flex</option>
-		<option value="inline-flex">inline-flex</option>
+
 	</select>
+	<input type="checkbox" name="topToZero">Top = 0
 	<br> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
 	dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
 	book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
@@ -30,12 +24,30 @@
 	desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
 	<script>
 		var select = document.querySelector('select');
+		var array = ['static', 'absolute', 'fixed', 'relative', 'sticky'];
+		array.forEach(n => {
+			var option = document.createElement("option");
+			option.text = n;
+			option.value = n;
+			select.add(option);
+		});
 		select.addEventListener('input', onSelect);
 
 		function onSelect() {
 			console.log('onSelect', select.value);
-			document.querySelector('h1').style.display = select.value;
+			document.querySelector('h1').style.position = select.value;
 		}
+
+		var checkBox = document.querySelector('[name="topToZero"]');
+
+		checkBox.addEventListener('change', function () {
+			console.log('onTopToZero');
+			if (checkBox.checked) {
+				document.querySelector('h1').style.top = 0;
+			} else {
+				document.querySelector('h1').style.top = 'auto';
+			}
+		});
 	</script>
 </body>
 
