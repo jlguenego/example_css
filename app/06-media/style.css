@@ -1,5 +1,34 @@
-@import 'hello.css';
+@media print {
+	body {
+		font-family: monospace;
+		color: red;
+	}
+}
 
-span {
-	font-size: 20px;
+@media (orientation: landscape) {
+	.portrait {
+		display: none;
+	}
+}
+
+@media (orientation: portrait) {
+	.landscape {
+		display: none;
+	}
+}
+
+@media (min-width: 400px) and (max-width: 500px) {
+	body {
+		background-color: yellow;
+	}
+}
+
+@media (hover: none) {
+	body {
+		color: green;
+	}
+}
+
+li:hover {
+	background-color: #eee;
 }
