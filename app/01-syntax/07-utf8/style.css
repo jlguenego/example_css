@@ -1,6 +1,14 @@
 /* Since HTML5, no need to add @charset anymore. */
 
 h1::before {
+	display: block;
 	content: "Maïté...";
 	font-size: 10px;
+}
+
+h1::after {
+	display: block;
+	content: "Again Maïté...";
+	font-size: 10px;
+	
 }

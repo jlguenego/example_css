@@ -1,10 +1,30 @@
-
-
 * {
 	border: 1px solid black;
+	padding: 5px;
 }
 
-h1 {
-	z-index: 1;
+block {
+	display: block;
+}
+
+float-left, float-right {
+	display: block;
+	width: 100px;
+	height: 100px;
+	opacity: 0.5;
+}
+
+float-left {
+	float: left;
 	background-color: #eee;
+}
+float-right {
+	float: right;
+	background-color: #ddd;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
 }
