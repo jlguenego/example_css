@@ -82,3 +82,7 @@ parent[align-self] {
 	align-items: flex-start;
 	height: 100px;
 }
+
+parent[flex] child {
+	flex: 1 1 300px;
+}
