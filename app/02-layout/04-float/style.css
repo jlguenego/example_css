@@ -10,7 +10,7 @@ block {
 float-left, float-right {
 	display: block;
 	width: 100px;
-	height: 100px;
+	height: 30px;
 	opacity: 0.5;
 }
 
@@ -29,3 +29,6 @@ float-right {
     clear: both;
     display: table;
 }
+ b {
+	 border: none;
+ }
