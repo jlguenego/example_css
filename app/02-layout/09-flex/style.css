@@ -17,6 +17,14 @@ h1-section section {
 	background-color: hsl(0, 100%, 95%);
 }
 
+h1-section[child] section {
+	background-color: hsl(120, 100%, 95%);
+}
+
+h3 {
+	border-top: 1px solid #aaa;
+}
+
 parent {
 	display: flex;
 	background-color: lightgray;
@@ -58,4 +66,14 @@ parent[ex7] {
 
 parent[ex8] {
 	flex-flow: row-reverse wrap-reverse;
+}
+
+align-content parent {
+	flex-flow: row wrap;
+	width: 30px;
+	height: 200px;
+}
+
+[flex-shrink] child {
+	flex-basis: 500px;
 }

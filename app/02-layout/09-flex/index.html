@@ -7,7 +7,7 @@
 </head>
 
 <body>
-	<h1>Flex parent</h1>
+	<h1>Flex parent properties</h1>
 	<h1-section>
 		<section>
 			<h2>Flex Direction</h2>
@@ -72,19 +72,220 @@
 			</wrap>
 		</section>
 		<section>
-			<h2>Flex Flow</h2>
-			<note>Concatenation (short hand) of flex-direction and flex-wrap</note>
-			<wrap>
-				<h3>Row reverse - Wrap reverse</h3>
-				<parent ex8>
+			<h2>Justify Content</h2>
+
+			<h3>flex-start (default)</h3>
+			<parent style="justify-content: flex-start">
+				<child>1</child>
+				<child>2</child>
+				<child>3</child>
+			</parent>
+			<h3>flex-end</h3>
+			<parent style="justify-content: flex-end">
+				<child>1</child>
+				<child>2</child>
+				<child>3</child>
+			</parent>
+			<h3>center</h3>
+			<parent style="justify-content: center">
+				<child>1</child>
+				<child>2</child>
+				<child>3</child>
+			</parent>
+			<h3>space-between</h3>
+			<parent style="justify-content: space-between">
+				<child>1</child>
+				<child>2</child>
+				<child>3</child>
+			</parent>
+			<h3>space-around</h3>
+			<parent style="justify-content: space-around">
+				<child>1</child>
+				<child>2</child>
+				<child>3</child>
+			</parent>
+			<h3>space-evenly</h3>
+			<parent style="justify-content: space-evenly">
+				<child>1</child>
+				<child>2</child>
+				<child>3</child>
+			</parent>
+		</section>
+		<section>
+			<h2>Align items</h2>
+
+			<h3>flex-start (default)</h3>
+			<parent style="align-items: flex-start">
+				<child style="height: 50px; font-size: 2em;">1</child>
+				<child style="height: 100px; font-size: 3em;">2</child>
+				<child style="height: 75px">3</child>
+			</parent>
+			<h3>flex-end</h3>
+			<parent style="align-items: flex-end">
+				<child style="height: 50px; font-size: 2em;">1</child>
+				<child style="height: 100px; font-size: 3em;">2</child>
+				<child style="height: 75px">3</child>
+			</parent>
+			<h3>center</h3>
+			<parent style="align-items: center">
+				<child style="height: 50px; font-size: 2em;">1</child>
+				<child style="height: 100px; font-size: 3em;">2</child>
+				<child style="height: 75px">3</child>
+			</parent>
+			<h3>stretch</h3>
+			<parent style="align-items: stretch">
+				<child style="height: 50px; font-size: 2em;">1</child>
+				<child style="height: 100px; font-size: 3em;">2</child>
+				<child style="height: 75px">3</child>
+			</parent>
+			<h3>baseline</h3>
+			<parent style="align-items: baseline">
+				<child style="height: 50px; font-size: 2em;">1</child>
+				<child style="height: 100px; font-size: 3em;">2</child>
+				<child style="height: 75px">3</child>
+			</parent>
+		</section>
+		<section>
+			<align-content>
+				<h2>Align Content</h2>
+				<h3>flex-start (default)</h3>
+				<parent style="align-content: flex-start">
 					<child>1</child>
 					<child>2</child>
 					<child>3</child>
 				</parent>
-			</wrap>
+				<h3>flex-end</h3>
+				<parent style="align-content: flex-end">
+					<child>1</child>
+					<child>2</child>
+					<child>3</child>
+				</parent>
+				<h3>center</h3>
+				<parent style="align-content: center">
+					<child>1</child>
+					<child>2</child>
+					<child>3</child>
+				</parent>
+				<h3>space-between</h3>
+				<parent style="align-content: space-between">
+					<child>1</child>
+					<child>2</child>
+					<child>3</child>
+				</parent>
+				<h3>space-around</h3>
+				<parent style="align-content: space-around">
+					<child>1</child>
+					<child>2</child>
+					<child>3</child>
+				</parent>
+				<h3>space-evenly</h3>
+				<parent style="align-content: space-evenly">
+					<child>1</child>
+					<child>2</child>
+					<child>3</child>
+				</parent>
+			</align-content>
 		</section>
-		<section></section>
-		<section></section>
+	</h1-section>
+	<h1>Flex child properties</h1>
+	<h1-section child>
+		<section>
+			<h2>Order</h2>
+			<h3>Flex direction: default</h3>
+			<xmp>
+				<parent>
+					<child style="order: 23">1</child>
+					<child style="order: 23">2</child>
+					<child style="order: 15">3</child>
+				</parent>
+			</xmp>
+			<parent>
+				<child style="order: 23">1</child>
+				<child style="order: 23">2</child>
+				<child style="order: 15">3</child>
+			</parent>
+		</section>
+		<section>
+			<h2>Flex grow</h2>
+			<h3>Same distribution</h3>
+			<xmp>
+				All flex-grow set to the same value.
+				<parent>
+					<child style="flex-grow: 1">1</child>
+					<child style="flex-grow: 1">2</child>
+					<child style="flex-grow: 1">3</child>
+				</parent>
+			</xmp>
+			<parent>
+				<child style="flex-grow: 1">1</child>
+				<child style="flex-grow: 1">2</child>
+				<child style="flex-grow: 1">3</child>
+			</parent>
+			<h3>Different distribution</h3>
+			<xmp>
+				Second child take twice space of the others.
+				<parent>
+					<child style="flex-grow: 1">1</child>
+					<child style="flex-grow: 2">2</child>
+					<child style="flex-grow: 1">3</child>
+				</parent>
+			</xmp>
+			<parent>
+				<child style="flex-grow: 1">1</child>
+				<child style="flex-grow: 2">2</child>
+				<child style="flex-grow: 1">3</child>
+			</parent>
+			<h3>flex grow less than 1</h3>
+			<xmp>
+				Not all remaining space can be taken.
+				<parent>
+					<child style="flex-grow: 0.1">1</child>
+					<child style="flex-grow: 0.2">2</child>
+					<child style="flex-grow: 0.1">3</child>
+				</parent>
+			</xmp>
+			<parent>
+				<child style="flex-grow: 0.1">1</child>
+				<child style="flex-grow: 0.2">2</child>
+				<child style="flex-grow: 0.1">3</child>
+			</parent>
+		</section>
+
+		<section>
+			<h2>Flex Basis</h2>
+			<xmp>
+				<parent>
+					<child style="flex-basis: 100px;">1 - 100px</child>
+					<child style="flex-basis: 150px;">2 - 150px</child>
+					<child style="flex-basis: 80px;">3 - 80px</child>
+				</parent>
+			</xmp>
+			<parent>
+				<child style="flex-basis: 100px;">1 - 100px</child>
+				<child style="flex-basis: 150px;">2 - 150px</child>
+				<child style="flex-basis: 80px;">3 - 80px</child>
+			</parent>
+
+		</section>
+
+		<section>
+			<h2>Flex shrink</h2>
+			<h3>Different distribution</h3>
+			<xmp>
+				Note: flex-basis set to 500px.
+				<parent>
+					<child style="flex-shrink: 1">1</child>
+					<child style="flex-shrink: 2">2</child>
+					<child style="flex-shrink: 1">3</child>
+				</parent>
+			</xmp>
+			<parent flex-shrink>
+				<child style="flex-shrink: 1">1</child>
+				<child style="flex-shrink: 2">2</child>
+				<child style="flex-shrink: 1">3</child>
+			</parent>
+
+		</section>
 	</h1-section>
 	<h3>Notes</h3>
 	<ul>
