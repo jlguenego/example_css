@@ -29,6 +29,7 @@ parent {
 	-js-display: flex;
 	display: flex;
 	background-color: lightgray;
+	width: 100%;
 }
 
 parent>child {
