@@ -10,7 +10,9 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "express": "^4.16.2",
     "gulp": "^3.9.1",
-    "gulp-gh-pages": "^0.5.4"
+    "gulp-gh-pages": "^0.5.4",
+    "serve-index": "^1.9.1"
   }
 }

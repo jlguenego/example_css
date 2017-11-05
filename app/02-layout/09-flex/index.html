@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Flex</title>
+	<link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+	<h1>Flex parent</h1>
+	<h1-section>
+		<section>
+			<h2>Flex Direction</h2>
+			<h3>Flex direction: default</h3>
+			<parent ex1>
+				<child>1</child>
+				<child>2</child>
+				<child>3</child>
+			</parent>
+			<h3>Flex direction: row-reverse</h3>
+			<parent ex2>
+				<child>1</child>
+				<child>2</child>
+				<child>3</child>
+			</parent>
+			<h3>Flex direction: column</h3>
+			<parent ex3>
+				<child>1</child>
+				<child>2</child>
+				<child>3</child>
+			</parent>
+			<h3>Flex direction: column-reverse</h3>
+			<parent ex4>
+				<child>1</child>
+				<child>2</child>
+				<child>3</child>
+			</parent>
+		</section>
+		<section>
+			<h2>Flex Wrap</h2>
+			<wrap>
+				<h3>Nowrap (default)</h3>
+				<parent ex5>
+					<child>1</child>
+					<child>2</child>
+					<child>3</child>
+				</parent>
+				<h3>Wrap</h3>
+				<parent ex6>
+					<child>1</child>
+					<child>2</child>
+					<child>3</child>
+				</parent>
+				<h3>Wrap reverse</h3>
+				<parent ex7>
+					<child>1</child>
+					<child>2</child>
+					<child>3</child>
+				</parent>
+			</wrap>
+		</section>
+		<section>
+			<h2>Flex Flow</h2>
+			<note>Concatenation (short hand) of flex-direction and flex-wrap</note>
+			<wrap>
+				<h3>Row reverse - Wrap reverse</h3>
+				<parent ex8>
+					<child>1</child>
+					<child>2</child>
+					<child>3</child>
+				</parent>
+			</wrap>
+		</section>
+		<section>
+			<h2>Flex Flow</h2>
+			<note>Concatenation (short hand) of flex-direction and flex-wrap</note>
+			<wrap>
+				<h3>Row reverse - Wrap reverse</h3>
+				<parent ex8>
+					<child>1</child>
+					<child>2</child>
+					<child>3</child>
+				</parent>
+			</wrap>
+		</section>
+		<section></section>
+		<section></section>
+	</h1-section>
+	<h3>Notes</h3>
+	<ul>
+		<li>Overflow: le block enfant dépasse le content area du block parent.</li>
+	</ul>
+</body>
+
+</html>
