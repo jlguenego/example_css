@@ -77,3 +77,8 @@ align-content parent {
 [flex-shrink] child {
 	flex-basis: 500px;
 }
+
+parent[align-self] {
+	align-items: flex-start;
+	height: 100px;
+}
