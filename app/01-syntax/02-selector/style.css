@@ -45,6 +45,7 @@ div.hello {
 
 div[foo]  {
 	background-color: hsl(240, 100%, 90%);
+	/* hsl does not work in IE8 */
 }
 
 div[foo="bar"]  {
