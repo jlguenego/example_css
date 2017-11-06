@@ -3,7 +3,19 @@
 
 <head>
 	<title>Flex</title>
+	<!--[if lte IE 8]>
+      <script>
+        document.createElement('h1-section');
+        document.createElement('parent');
+        document.createElement('child');
+        document.createElement('wrap');
+        document.createElement('note');
+        document.createElement('align-content');
+sn
+      </script>
+    <![endif]-->
 	<link rel="stylesheet" href="style.css" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/flexibility/2.0.1/flexibility.js"></script>
 </head>
 
 <body>
@@ -303,6 +315,9 @@
 			</parent>
 		</section>
 	</h1-section>
+	<script>
+		flexibility(document.documentElement);
+	</script>
 </body>
 
 </html>
