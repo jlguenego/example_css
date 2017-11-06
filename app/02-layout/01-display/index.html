@@ -30,7 +30,11 @@
 	desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
 	<script>
 		var select = document.querySelector('select');
-		select.addEventListener('input', onSelect);
+		if (select.addEventListener) {
+			select.addEventListener('input', onSelect);
+		} else { // IE8
+			select.attachEvent('onchange', onSelect);
+		}
 
 		function onSelect() {
 			console.log('onSelect', select.value);
