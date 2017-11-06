@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Hello World !</title>
+</head>
+
+<body>
+    <h1>Hello World !</h1>
+    <script>
+        document.querySelector('head').appendChild(document.createElement('style'));
+        var s = document.styleSheets[0];
+        console.log('s', s);
+        var rule = "h1 { color: blue }";
+        s.insertRule(rule);
+        s.cssRules[0].style.backgroundColor = "red";
+    </script>
+</body>
+
+</html>
