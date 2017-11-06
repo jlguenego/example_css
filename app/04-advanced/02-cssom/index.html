@@ -11,9 +11,19 @@
         document.querySelector('head').appendChild(document.createElement('style'));
         var s = document.styleSheets[0];
         console.log('s', s);
-        var rule = "h1 { color: blue }";
-        s.insertRule(rule);
-        s.cssRules[0].style.backgroundColor = "red";
+        console.log('s.rules', s.rules);
+
+        if (s.insertRule) {
+            var rule = "h1 { color: blue }";
+            s.insertRule(rule);
+        } else {
+            s.addRule('h1', 'color: blue');
+        }
+        if (s.cssRules) {
+            s.cssRules[0].style.backgroundColor = "red";
+        } else {
+            s.rules[0].style.backgroundColor = "red";
+        }
     </script>
 </body>
 
