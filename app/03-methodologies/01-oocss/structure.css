@@ -9,12 +9,14 @@
 html,
 body {
 	display: block;
+	min-width: 600px;
 	height: 100%;
 	margin: 0;
 	padding: 0;
 	font-size: 20px;
 	--header-height: 50px;
 	--footer-height: 50px;
+	
 }
 
 
@@ -54,13 +56,38 @@ body {
 	height: calc(100% - var(--header-height) - var(--footer-height));
 }
 
+.jumbo {
+	display: block;
+	padding: 10%;
+}
+
+.jumbo .text {
+	font-size: 2em;
+}
+
+.center {
+	text-align: center;
+}
+
+.jumbo .buttons {
+	display: block;
+	margin: 50px;
+}
+
+.jumbo .btn {
+	display: inline-block;
+	padding: 10px;
+	border: 1 solid black;
+	font-size: 1.5em;
+}
+
 .footer {
 	display: block;
 	height: var(--footer-height);
 	text-align: center;
 }
 
-.center {
+.copyright {
 	display: inline-block;
 	line-height: var(--footer-height);
 }

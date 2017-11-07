@@ -20,3 +20,7 @@
 .classic .footer {
 	background-color: var(--footer-bg-color);
 }
+
+.classic .jumbo .btn {
+	border-color: black;
+}
