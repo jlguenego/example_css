@@ -24,3 +24,7 @@
 .classic .jumbo .btn {
 	border-color: black;
 }
+
+.classic .btn {
+	cursor: pointer;
+}

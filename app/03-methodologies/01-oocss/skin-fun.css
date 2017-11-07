@@ -1,3 +1,49 @@
-.hello-world {
-	color: green;
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+.fun {
+	--main-bg-color: coral;
+	--main-color: white;
+	--footer-bg-color: DarkCyan;
+	color: var(--main-color);
+	font-family: 'Roboto', sans-serif;
+}
+
+.fun .header {
+	background-color: var(--main-bg-color);
+}
+
+.fun .header a {
+	text-decoration: none;
+	color: var(--main-color);
+}
+
+.fun .site-id {
+	top: calc(50% - 15px);
+	text-shadow: rgb(127, 127, 127) 2px 2px 3px;
+	font-weight: bold;
+}
+
+.fun .menu {
+	top: calc(50% - 12px);
+}
+
+.fun .footer {
+	background-color: var(--footer-bg-color);
+}
+
+.fun .jumbo {
+	color: black;
+}
+
+.fun .jumbo .btn {
+	background-color: LightCoral;
+	border-color: IndianRed;
+	box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.fun .jumbo .btn:hover {
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.fun .btn {
+	cursor: pointer;
 }
