@@ -1,3 +1,66 @@
-.hello-world {
-	color: green;
+/* reset */
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+html,
+body {
+	display: block;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+	--header-height: 50px;
+	--footer-height: 50px;
+}
+
+
+/* structure */
+
+.header {
+	display: block;
+	/* we must describe everything included what would already specified in the element */
+	height: var(--header-height);
+}
+
+.site-id {
+	display: block;
+	position: relative;
+	top: calc(50% - 12px);
+	float: left;
+	padding: 0 20px;
+	font-size: 1.2em;
+}
+
+.menu {
+	display: block;
+	position: relative;
+	top: calc(50% - 10px);
+	float: right;
+	padding: 0 20px;
+}
+
+.menu-item {
+	display: inline-block;
+	margin: 0 15px;
+	padding: 0 5px;
+}
+
+.body {
+	display: block;
+	height: calc(100% - var(--header-height) - var(--footer-height));
+}
+
+.footer {
+	display: block;
+	height: var(--footer-height);
+	text-align: center;
+}
+
+.center {
+	display: inline-block;
+	line-height: var(--footer-height);
 }

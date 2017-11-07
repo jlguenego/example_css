@@ -1,3 +1,22 @@
-.hello-world {
-	color: green;
+.classic {
+	--main-bg-color: #eee;
+	--main-color: black;
+	--footer-bg-color: #aaa;
+	color: var(--main-color);
+}
+
+.classic .header {
+	background-color: var(--main-bg-color);
+}
+
+.classic .header a {
+	text-decoration: none;
+	color: var(--main-color);
+}
+.classic .site-id {
+	font-weight: bold;
+}
+
+.classic .footer {
+	background-color: var(--footer-bg-color);
 }

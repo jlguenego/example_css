@@ -2,29 +2,34 @@
 <html>
 
 <head>
+	<meta charset="utf-8">
 	<title>Hello World !</title>
 	<link rel="stylesheet" href="structure.css" />
 	<link rel="stylesheet" href="skin-classic.css" />
 	<link rel="stylesheet" href="skin-fun.css" />
 </head>
 
-<body>
-	<jlg-header class="header">
-		<site-id>OOCSS</site-id>
-		<menu>
-			<item>What is it ?</item>
-			<item>Structure</item>
-			<item>Skin</item>
-			<item>Other</item>
-		</menu>
-	</jlg-header>
-	<jlg-body>
+<body class="classic">
+	<header class="header">
+		<a href="#" class="site-id">OOCSS</a>
+		<nav class="menu">
+			<a href="#" class="menu-item">What is it ?</a>
+			<a href="#" class="menu-item">Structure</a>
+			<a href="#" class="menu-item">Skin</a>
+			<a href="#" class="menu-item">Other</a>
+		</nav>
+	</header>
+	<main class="body">
 		<jumbo>OOCSS is the basic CSS Methodology everyone should hear about.
 			<button>I want to know more !</button>
 		</jumbo>
-	</jlg-body>
-	<jlg-footer></jlg-footer>
-	
+	</main>
+	<footer class="footer">
+		<p class="center">
+			©2017 - JLG Consulting
+		</p>
+	</footer>
+
 </body>
 
 </html>
