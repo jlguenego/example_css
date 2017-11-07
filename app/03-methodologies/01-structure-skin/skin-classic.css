@@ -13,6 +13,7 @@
 	text-decoration: none;
 	color: var(--main-color);
 }
+
 .classic .site-id {
 	font-weight: bold;
 }
@@ -26,5 +27,8 @@
 }
 
 .classic .btn {
+	background-color: #eee;
+	text-decoration: none;
+	color: var(--main-color);
 	cursor: pointer;
 }
