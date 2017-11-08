@@ -8,10 +8,10 @@ h1 {
     font-size: 2em;
 }
 
-.header {
-    background-color: CadetBlue;
-}
-
-.footer {
+.header,
+.footer,
+.content,
+.sidebar-menu,
+.context {
     background-color: CadetBlue;
 }
