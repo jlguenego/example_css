@@ -23,14 +23,13 @@ body {
 }
 
 .grid-background .col-1 {
-    display: flex;
-    float: left;
     width: calc(100% / 12);
     height: 100%;
     border-right: 1px solid #ddd;
 }
 
 .grid {
+    /* display: block; */
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -58,4 +57,16 @@ body {
     display: block;
     width: calc(3 * 100% / 12 - 10px);
     margin: 5px;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .row,
+    .grid-background {
+        flex-direction: column;
+    }
+    [class*="col-"],
+    .grid-background .col-1 {
+        width: 100%;
+    }
 }

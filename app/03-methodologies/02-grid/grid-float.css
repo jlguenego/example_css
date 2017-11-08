@@ -72,3 +72,11 @@ body {
     width: calc(3 * 100% / 12 - 10px);
     margin: 5px;
 }
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"],
+    .grid-background .col-1 {
+        width: 100%;
+    }
+}

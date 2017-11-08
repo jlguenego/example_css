@@ -62,3 +62,22 @@ body {
 .col-3 {
     width: calc(3 * 100% / 12 - 10px);
 }
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .row {
+        flex-direction: column;
+    }
+    [class*="col-"],
+    .grid-background .col-1 {
+        width: 100%;
+    }
+}
+
+
+/* A grid completely designed in inline-block cannot be easily set to be responsive.
+Why ?
+- inline-block inside block have a small paddin separation
+https://stackoverflow.com/questions/19038799/why-is-there-an-unexplainable-gap-between-these-inline-block-div-elements
+So, we are using flex.
+*/
