@@ -3,6 +3,8 @@
 	--main-color: black;
 	--footer-bg-color: #aaa;
 	color: var(--main-color);
+	--font-family: Arial, Helvetica, sans-serif;
+	font-family: var(--font-family);
 }
 
 .classic .header {
@@ -31,4 +33,21 @@
 	text-decoration: none;
 	color: var(--main-color);
 	cursor: pointer;
+}
+
+.title {
+	display: block;
+	margin: 10px 0px 30px;
+}
+
+.paragraph {
+	display: block;
+	padding: 5px;
+}
+
+.select {
+	display: inline-block;
+	padding: 3px;
+	border: 1px solid black;
+	font-size: 1em;
 }
