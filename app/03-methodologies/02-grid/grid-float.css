@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.grid-background {
+    display: block;
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #eee;
+    font-size: 0;
+}
+
+.grid-background .col-1 {
+    display: block;
+    float: left;
+    width: calc(100% / 12);
+    height: 100%;
+    border-right: 1px solid #ddd;
+}
+
+.grid {
+    display: block;
+    margin: 0;
+}
+
+.row {
+    display: block;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.col-12 {
+    display: block;
+    margin: 5px;
+}
+
+.col-6 {
+    display: block;
+    float: left;
+    width: calc(6 * 100% / 12 - 10px);
+    margin: 5px;
+}
+
+.col-3 {
+    display: block;
+    float: left;
+    width: calc(3 * 100% / 12 - 10px);
+    margin: 5px;
+}
