@@ -29,6 +29,7 @@ body {
     width: calc(100% / 12);
     height: 100%;
     border-right: 1px solid #ddd;
+    margin: 0;
 }
 
 .grid {
@@ -42,20 +43,22 @@ body {
     width: 100%;
 }
 
-.col-12 {
-    display: block;
-    width: 100%;
+
+/* All elements with attribute class containing the string "col-" */
+
+[class*="col-"] {
+    display: inline-block;
     margin: 5px;
+}
+
+.col-12 {
+    width: 100%;
 }
 
 .col-6 {
-    display: inline-block;
     width: calc(6 * 100% / 12 - 10px);
-    margin: 5px;
 }
 
 .col-3 {
-    display: inline-block;
     width: calc(3 * 100% / 12 - 10px);
-    margin: 5px;
 }
