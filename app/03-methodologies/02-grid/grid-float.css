@@ -50,9 +50,16 @@ body {
     margin: 5px;
 }
 
+.col-12::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
 .col-6 {
     display: block;
     float: left;
+    height: 100%;
     width: calc(6 * 100% / 12 - 10px);
     margin: 5px;
 }
@@ -60,6 +67,7 @@ body {
 .col-3 {
     display: block;
     float: left;
+    height: 100%;
     width: calc(3 * 100% / 12 - 10px);
     margin: 5px;
 }
