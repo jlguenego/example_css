@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<title>Grid example</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="grid-float.css" />
+	<link id="css" rel="stylesheet" href="grid-inline-block.css" />
 	<link rel="stylesheet" href="style.css" />
 </head>
 
@@ -45,14 +45,29 @@
 				<a href="#" class="menu-item">Lien 3</a>
 				<a href="#" class="menu-item">Lien 4</a>
 			</div>
-			<div class="col-6 content">Content</div>
+			<div class="col-6 content">
+				<h2>Content</h2>
+				<label>Grid method: 
+					<select onchange="gridUpdate()">
+						<option value="grid-inline-block.css">Inline-block</option>
+						<option value="grid-float.css">Float</option>
+						<option value="grid-flex.css">Flex</option>
+					</select>
+				</label>
+			</div>
 			<div class="col-3 context">Context</div>
 		</div>
 		<div class="row">
 			<div class="col-12 footer">@JLG Consulting - 2017</div>
 		</div>
 	</div>
-
+	<script>
+		function gridUpdate() {
+			var select = document.querySelector('select');
+			var css = document.querySelector('#css');
+			css.setAttribute('href', select.value);
+		}
+	</script>
 </body>
 
 </html>

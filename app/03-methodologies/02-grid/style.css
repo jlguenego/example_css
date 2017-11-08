@@ -60,3 +60,13 @@ h2 {
 .header .menu-item {
     float: left;
 }
+
+/* float cannot compute height */
+
+.content {
+    height: 166px;
+}
+
+.context {
+    height: 166px;
+}
