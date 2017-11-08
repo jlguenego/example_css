@@ -16,7 +16,6 @@ body {
 	font-size: 20px;
 	--header-height: 50px;
 	--footer-height: 50px;
-	
 }
 
 
@@ -85,7 +84,13 @@ body {
 .title {
 	font-size: 1.5em;
 	font-weight: bold;
-	margin: 10px 0 30px;
+	margin: 30px 0 10px;
+}
+
+.subtitle {
+	font-size: 1.2em;
+	font-weight: bold;
+	margin: 30px 0 10px;
 }
 
 .footer {
