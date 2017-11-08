@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<title>Grid example</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="grid-float.css" />
+	<link rel="stylesheet" href="grid-inline-block.css" />
 	<link rel="stylesheet" href="style.css" />
 </head>
 
@@ -29,10 +29,22 @@
 		<div class="row">
 			<div class="col-12 header">
 				<h1>Grid example</h1>
+				<div class="menu">
+					<a href="#" class="menu-item">Lien 1</a>
+					<a href="#" class="menu-item">Lien 2</a>
+					<a href="#" class="menu-item">Lien 3</a>
+					<a href="#" class="menu-item">Lien 4</a>
+				</div>
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-3 sidebar-menu">Sidebar Menu</div>
+			<div class="col-3 sidebar-menu">
+				<h2 class="sidebar-menu-title">Sidebar Menu</h2>
+				<a href="#" class="menu-item">Lien 1</a>
+				<a href="#" class="menu-item">Lien 2</a>
+				<a href="#" class="menu-item">Lien 3</a>
+				<a href="#" class="menu-item">Lien 4</a>
+			</div>
 			<div class="col-6 content">Content</div>
 			<div class="col-3 context">Context</div>
 		</div>

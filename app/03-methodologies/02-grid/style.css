@@ -8,10 +8,55 @@ h1 {
     font-size: 2em;
 }
 
+h2 {
+    display: block;
+    padding: 0.5em 0 1em 0.5em;
+    font-size: 1.5em;
+}
+
 .header,
 .footer,
 .content,
 .sidebar-menu,
 .context {
-    background-color: CadetBlue;
+    background-color: hsl(182, 25%, 80%);
+    
+}
+
+.menu-item {
+    display: block;
+    margin: 5px;
+    padding: 0.2em;
+    text-align: center;
+    background-color:  hsl(182, 25%, 60%);
+    text-decoration: none;
+    color: black;
+}
+
+.menu-item:hover {
+    background-color:  hsl(182, 25%, 50%);
+}
+
+.menu-item:active {
+    background-color:  hsl(182, 40%, 50%);
+}
+
+.header h1 {
+    float: left;
+}
+
+.header .menu {
+    position: relative;
+    top: 20px;
+    float: right;
+    padding-right: 30px;
+}
+
+.sidebar-menu-title {
+    text-align: center;
+    padding: 0.3em;
+}
+
+.header .menu-item {
+    float: left;
 }
