@@ -1,0 +1,45 @@
+.menu {
+    position: relative;
+    top: 20px;
+    float: right;
+    padding-right: 30px;
+}
+
+.menu-item {
+    display: block;
+    float: left;
+    margin: 5px;
+    padding: 0.2em;
+    text-align: center;
+    background-color: hsl(182, 25%, 60%);
+    text-decoration: none;
+    color: black;
+}
+
+.menu-item:hover {
+    background-color: hsl(182, 25%, 50%);
+}
+
+.menu-item:active {
+    background-color: hsl(182, 40%, 50%);
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+   .menu {
+       display: none;
+       position: fixed;
+       float: none;
+       width: 100%;
+       top: 80px;
+
+   }
+   .menu .menu-item {
+       display: block;
+       float: none;
+       margin: 0;
+       padding: 20px;
+       width: 100%;
+
+   }
+}

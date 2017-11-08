@@ -23,33 +23,14 @@ h2 {
     padding: 5px;
 }
 
-.menu-item {
-    display: block;
-    margin: 5px;
-    padding: 0.2em;
-    text-align: center;
-    background-color: hsl(182, 25%, 60%);
-    text-decoration: none;
-    color: black;
-}
-
-.menu-item:hover {
-    background-color: hsl(182, 25%, 50%);
-}
-
-.menu-item:active {
-    background-color: hsl(182, 40%, 50%);
-}
-
 .header h1 {
     float: left;
 }
 
-.header .menu {
-    position: relative;
-    top: 20px;
+.hamburger {
+    padding: 11px 25px;
     float: right;
-    padding-right: 30px;
+    font-size: 3em;
 }
 
 .sidebar-menu-title {
@@ -57,10 +38,10 @@ h2 {
     padding: 0.3em;
 }
 
-.header .menu-item {
-    float: left;
+.sidebar-menu .menu-item {
+    display: block;
+    float: none;
 }
-
 
 /* float cannot compute height */
 
