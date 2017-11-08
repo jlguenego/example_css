@@ -4,13 +4,13 @@ body {
 
 h1 {
     display: block;
-    padding: 0.5em 0 1em 0.5em;
+    padding: 0.5em 0 1em 0em;
     font-size: 2em;
 }
 
 h2 {
     display: block;
-    padding: 0.5em 0 1em 0.5em;
+    padding: 0.5em 0 1em 0em;
     font-size: 1.5em;
 }
 
@@ -20,7 +20,7 @@ h2 {
 .sidebar-menu,
 .context {
     background-color: hsl(182, 25%, 80%);
-    
+    padding: 5px;
 }
 
 .menu-item {
@@ -28,17 +28,17 @@ h2 {
     margin: 5px;
     padding: 0.2em;
     text-align: center;
-    background-color:  hsl(182, 25%, 60%);
+    background-color: hsl(182, 25%, 60%);
     text-decoration: none;
     color: black;
 }
 
 .menu-item:hover {
-    background-color:  hsl(182, 25%, 50%);
+    background-color: hsl(182, 25%, 50%);
 }
 
 .menu-item:active {
-    background-color:  hsl(182, 40%, 50%);
+    background-color: hsl(182, 40%, 50%);
 }
 
 .header h1 {
@@ -61,12 +61,15 @@ h2 {
     float: left;
 }
 
+
 /* float cannot compute height */
 
-.content {
-    height: 166px;
+.content,
+.context,
+.sidebar-menu {
+    height: 200px;
 }
 
-.context {
-    height: 166px;
+.footer {
+    text-align: center;
 }
