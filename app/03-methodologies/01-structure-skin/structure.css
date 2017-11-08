@@ -74,10 +74,14 @@ body {
 	margin: 50px;
 }
 
-.jumbo .btn {
+.btn {
 	display: inline-block;
-	padding: 10px;
+	padding: 0.2em 0.4em;
 	border: 1px solid black;
+	font-size: 1em;
+}
+
+.jumbo .btn {
 	font-size: 1.5em;
 }
 
