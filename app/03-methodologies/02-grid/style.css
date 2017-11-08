@@ -5,4 +5,13 @@ body {
 h1 {
     display: block;
     padding: 0.5em 0 1em 0.5em;
+    font-size: 2em;
+}
+
+.header {
+    background-color: CadetBlue;
+}
+
+.footer {
+    background-color: CadetBlue;
 }
