@@ -63,3 +63,24 @@
 .fun .btn {
 	cursor: pointer;
 }
+
+.fun .title {
+	display: block;
+	margin: 10px 0px 30px;
+}
+
+.fun .paragraph {
+	display: block;
+	margin: 10px 0;
+}
+
+.fun .select {
+	display: inline-block;
+	padding: 3px;
+	border: 1px solid black;
+	font-size: 1em;
+}
+
+.fun .option {
+	background-color: hsl(0, 0%, 98%);
+}

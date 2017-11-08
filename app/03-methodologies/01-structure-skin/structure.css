@@ -62,7 +62,7 @@ body {
 }
 
 .jumbo .text {
-	font-size: 2em;
+	font-size: 1.3em;
 }
 
 .center {
@@ -81,7 +81,7 @@ body {
 	font-size: 1em;
 }
 
-.jumbo .btn {
+.jumbo {
 	font-size: 1.5em;
 }
 
@@ -106,4 +106,25 @@ body {
 .copyright {
 	display: inline-block;
 	line-height: var(--footer-height);
+}
+
+.list {
+	display: block;
+}
+
+.list-item {
+	display: block;
+}
+
+.list-item::before {
+	display: inline-block;
+	padding-left: 0.5em;
+	padding-right: 1em;
+	content: '\25CF';
+}
+
+.fa.emoji {
+	position: relative;
+	top: 0.2em;
+	font-size: 1.5em;
 }

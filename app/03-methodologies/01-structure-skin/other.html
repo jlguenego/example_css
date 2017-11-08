@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="structure.css" />
 	<link rel="stylesheet" href="skin-classic.css" />
 	<link rel="stylesheet" href="skin-fun.css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body class="classic">
@@ -20,9 +21,15 @@
 		</my-menu>
 	</my-header>
 	<my-body class="body">
-		<my-h1 class="title">Structure</my-h1>
+		<my-h1 class="title">Good CSS architecture</my-h1>
 		<my-p class="paragraph">
-			The structure of a css document concerns the <b>dimensions</b> of the box and the <b>positioning</b> between them.
+			It is a good sign when you do not need to go to modify your CSS file to setup the presentation layer, but only the classes
+			in the DOM.
+		</my-p>
+		<my-ul class="list">
+			<my-li class="list-item">Modifying CSS file &rarr; <i class="fa fa-frown-o critical emoji" aria-hidden="true"></i> </my-li>
+			<my-li class="list-item">Adding / deleting classes in the DOM &rarr; <i class="fa fa-smile-o success emoji" aria-hidden="true"></i> </my-li>
+		</my-ul>
 		</my-p>
 		<my-p class="paragraph"> Other concerns like colors, font style, and other decorations, are in the <a href="skin.html">skin</a>.</my-p>
 	</my-body>

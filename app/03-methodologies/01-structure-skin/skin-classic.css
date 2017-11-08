@@ -35,19 +35,31 @@
 	cursor: pointer;
 }
 
-.title {
+.classic .title {
 	display: block;
 	margin: 10px 0px 30px;
 }
 
-.paragraph {
+.classic .paragraph {
 	display: block;
 	margin: 10px 0;
 }
 
-.select {
+.classic .select {
 	display: inline-block;
 	padding: 3px;
 	border: 1px solid black;
 	font-size: 1em;
+}
+
+.classic .option {
+	background-color: hsl(0, 0%, 98%);
+}
+
+.critical {
+	color: red;
+}
+
+.success {
+	color: green;
 }
