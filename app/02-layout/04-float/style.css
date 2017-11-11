@@ -26,6 +26,8 @@ float-right {
 	background-color: #ddd;
 }
 
+
+/* This clearfix stuff must be known by every CSS developper ! */
 .clearfix::after {
 	content: "";
 	clear: both;
