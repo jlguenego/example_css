@@ -3,78 +3,26 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Grid example</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link id="css" rel="stylesheet" href="grid-inline-block.css" />
-	<link rel="stylesheet" href="menu.css" />
+	<title>Reboot</title>
 	<link rel="stylesheet" href="style.css" />
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-
-	<div class="grid-background">
-		<div class="col-1"></div>
-		<div class="col-1"></div>
-		<div class="col-1"></div>
-		<div class="col-1"></div>
-		<div class="col-1"></div>
-		<div class="col-1"></div>
-		<div class="col-1"></div>
-		<div class="col-1"></div>
-		<div class="col-1"></div>
-		<div class="col-1"></div>
-		<div class="col-1"></div>
-		<div class="col-1"></div>
-	</div>
-	<div class="grid">
-		<div class="row">
-			<div class="col-12 header">
-				<h1>Grid example</h1>
-				<div toggle=".menu" class="hamburger mobile"><i class="fa fa-bars" aria-hidden="true"></i></div>
-				<div class="menu desktop">
-					<a href="#" class="menu-item">Lien 1</a>
-					<a href="#" class="menu-item">Lien 2</a>
-					<a href="#" class="menu-item">Lien 3</a>
-					<a href="#" class="menu-item">Lien 4</a>
-				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-3 sidebar-menu">
-				<h2 class="sidebar-menu-title">Sidebar Menu</h2>
-				<a href="#" class="menu-item">Lien 1</a>
-				<a href="#" class="menu-item">Lien 2</a>
-				<a href="#" class="menu-item">Lien 3</a>
-				<a href="#" class="menu-item">Lien 4</a>
-			</div>
-			<div class="col-6 content">
-				<h2>Content</h2>
-				<label>Grid method: 
-					<select onchange="gridUpdate()">
-						<option value="grid-inline-block.css">Inline-block</option>
-						<option value="grid-float.css">Float</option>
-						<option value="grid-flex.css">Flex</option>
-					</select>
-				</label>
-			</div>
-			<div class="col-3 context">
-				<h2>Context</h2>
-				<p>Note: this grid is responsive (breakpoint: 768px).</p>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-12 footer">@JLG Consulting - 2017</div>
-		</div>
-	</div>
-	<script>
-		function gridUpdate() {
-			var select = document.querySelector('select');
-			var css = document.querySelector('#css');
-			css.setAttribute('href', select.value);
-		}
-	</script>
-	<script src="toggle.js"></script>
+	<article>
+		<h1>Reboot</h1>
+		<p>Reboot is used by BootStrap to reset some CSS settings and incitate to use some rules.</p>
+		<ul>
+			<li>
+				<code>box-sizing: border-box</code>
+			</li>
+			<li>Some element are rebooted. ie: table, p, etc. in order to be consistent between browsers and use "smarter" settings as
+				for instance rem instead of em.</li>
+			<li>Avoid margin-top: this simplify the mental model about margin. vertically collapse, etc.</li>
+			<li>Prefer using rem for margin.</li>
+			<li>Minimize the
+				<code>font-</code> properties</li>
+		</ul>
+	</article>
 </body>
 
 </html>
