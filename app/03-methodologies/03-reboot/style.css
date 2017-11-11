@@ -15,14 +15,29 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
-article {
+main {
+    display: block;
     padding: 1rem;
 }
 
 h1 {
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 p {
+    margin-bottom: 1rem;
+}
+
+ul {
     margin-bottom: 0.5rem;
+    padding: 1rem;
+}
+
+li {
+    margin-left: 1rem;
+}
+
+code {
+    padding: 0 0.1rem;
+    background-color: #eee;
 }
