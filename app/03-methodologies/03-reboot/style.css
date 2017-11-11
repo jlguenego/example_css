@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    display: block;
+    padding: 0.5em 0 1em 0em;
+    font-size: 2em;
+}
+
+h2 {
+    display: block;
+    padding: 0.5em 0 1em 0em;
+    font-size: 1.5em;
+}
+
+.header,
+.footer,
+.content,
+.sidebar-menu,
+.context {
+    background-color: hsl(182, 25%, 80%);
+    padding: 5px;
+}
+
+.header h1 {
+    float: left;
+}
+
+.hamburger {
+    padding: 11px 25px;
+    float: right;
+    font-size: 3em;
+}
+
+.sidebar-menu-title {
+    text-align: center;
+    padding: 0.3em;
+}
+
+.sidebar-menu .menu-item {
+    display: block;
+    float: none;
+}
+
+/* float cannot compute height */
+
+.content,
+.context,
+.sidebar-menu {
+    height: 200px;
+}
+
+.footer {
+    text-align: center;
+}
