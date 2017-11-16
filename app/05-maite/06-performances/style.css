@@ -4,30 +4,36 @@
     box-sizing: border-box;
 }
 
-.blue,
-.green,
-.yellow {
-    display: inline-block;
-    width: 250px;
+.green {
+    background-color: greenyellow;
+}
+
+.width {
+    display: block;
+    width: 300px;
     height: 250px;
 }
 
-.blue {
-    float: left;
-    background-color: lightblue;
+.border {
+    border: 2px solid green;
 }
 
-.yellow {
+.shadow {
+    box-shadow: 10px 10px 5px #eee;
+}
+
+.float {
     float: right;
-    background-color: lightgoldenrodyellow;
 }
 
-.green {
-    background-color: lightseagreen;
+.all {
+    display: block;
+    width: 300px;
+    height: 250px;
+    float: right;
+    background-color: greenyellow;
+    border: 2px solid green;
 }
 
-.container:after {
-    content: "";
-    display: table;
-    clear: both;
+
 }
