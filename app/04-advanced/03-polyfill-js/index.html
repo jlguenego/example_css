@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Polyfill JS</title>
+</head>
+
+<body>
+	<h1>Polyfill</h1>
+	<ul>
+		<li>Open the console</li>
+	</ul>
+	<script>
+		Array.prototype.every = function (test) {
+			console.log('this', this);
+			for (var i = 0; i < this.length; i++) {
+				console.log('item', this[i]);
+				var result = test(this[i], i, this);
+				if (result === false) {
+					return false;
+				}
+			}
+			return true;
+		};
+		var result = [13, 14, 15].every(function (e) {
+			return e > 10;
+		});
+		console.log('result', result);
+	</script>
+</body>
+
+</html>
