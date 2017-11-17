@@ -5,6 +5,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 module.exports = {
     entry: {
         'scss-bundle': './app/04-advanced/04-scss/style.scss',
+        'less-bundle': './app/04-advanced/05-less/style.less',
     },
     output: {
         filename: '[name].js',
@@ -17,6 +18,13 @@ module.exports = {
                 fallback: 'style-loader',
                 // use: 'css-loader?minimize&sourceMap!sass-loader?sourceMap'
                 use: 'css-loader?sourceMap!sass-loader?sourceMap'
+            })
+        }, {
+            test: /\.less$/,
+            use: ExtractTextPlugin.extract({
+                fallback: 'style-loader',
+                // use: 'css-loader?minimize&sourceMap!less-loader?sourceMap'
+                use: 'css-loader?sourceMap!less-loader?sourceMap'
             })
         }]
     },
