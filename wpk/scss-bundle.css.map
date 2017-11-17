@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./app/04-advanced/04-scss/app/04-advanced/04-scss/style.scss"],"names":[],"mappings":"AAEA,KACI,qBAAsC","file":"scss-bundle.css","sourcesContent":["$hue: 200;\r\n\r\nbody {\r\n    background-color: hsl($hue, 100%, 90%);\r\n}\n\n\n// WEBPACK FOOTER //\n// ./app/04-advanced/04-scss/app/04-advanced/04-scss/style.scss"],"sourceRoot":""}
