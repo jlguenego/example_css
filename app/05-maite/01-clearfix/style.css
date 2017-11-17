@@ -1,4 +1,6 @@
-* {
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,6 +8,11 @@
 
 body {
     padding: 0.5rem;
+    font-size: 2rem;
+}
+
+select {
+    margin: 0.5rem;
 }
 
 .container {
@@ -18,6 +25,7 @@ body {
 .float-right {
     width: 250px;
     height: 250px;
+    margin-right: 1em;
 }
 
 .float-left {
@@ -30,11 +38,12 @@ body {
     background-color: lightgoldenrodyellow;
 }
 
-.clearfix {
+.clearfix::after {
     content: "";
     display: table;
     clear: both;
 }
+
 
 /* .container::after {
     content: "";
