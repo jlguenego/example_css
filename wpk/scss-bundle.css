@@ -18,4 +18,12 @@ body {
         body ul li {
           color: black; } }
 
+.message, .success {
+  border: 1px solid #ccc;
+  padding: 10px;
+  background-color: #ffe6e6; }
+
+.success {
+  background-color: #67ff67; }
+
 /*# sourceMappingURL=scss-bundle.css.map*/
