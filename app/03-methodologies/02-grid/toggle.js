@@ -7,14 +7,19 @@
         var selector = toggle.getAttribute('toggle');
         toggle.addEventListener('click', function () {
             console.log('click');
-            var target = document.querySelector(selector);
-            console.log('target', target);
-            state = !state;
-            if (state) {
-                target.style.display = 'block';
-            } else {
-                target.style.display = 'none';
-            }
+            window.toggle(selector);
         });
     });
+
+    window.toggle = function(selector) {
+        console.log('click');
+        var target = document.querySelector(selector);
+        console.log('target', target);
+        state = !state;
+        if (state) {
+            target.style.display = 'block';
+        } else {
+            target.style.display = 'none';
+        }
+    };
 })();

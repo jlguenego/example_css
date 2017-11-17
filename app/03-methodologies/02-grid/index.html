@@ -4,6 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>Grid example</title>
+	<!-- Responsive meta tag -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link id="css" rel="stylesheet" href="grid-inline-block.css" />
 	<link rel="stylesheet" href="menu.css" />
@@ -32,20 +33,20 @@
 				<h1>Grid example</h1>
 				<div toggle=".menu" class="hamburger mobile"><i class="fa fa-bars" aria-hidden="true"></i></div>
 				<div class="menu desktop">
-					<a href="#" class="menu-item">Lien 1</a>
-					<a href="#" class="menu-item">Lien 2</a>
-					<a href="#" class="menu-item">Lien 3</a>
-					<a href="#" class="menu-item">Lien 4</a>
+					<a onclick="toggle('.menu')" href="#link1" class="menu-item">Link 1</a>
+					<a onclick="toggle('.menu')" href="#link2" class="menu-item">Link 2</a>
+					<a onclick="toggle('.menu')" href="#link3" class="menu-item">Link 3</a>
+					<a onclick="toggle('.menu')" href="#link4" class="menu-item">Link 4</a>
 				</div>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-3 sidebar-menu">
 				<h2 class="sidebar-menu-title">Sidebar Menu</h2>
-				<a href="#" class="menu-item">Lien 1</a>
-				<a href="#" class="menu-item">Lien 2</a>
-				<a href="#" class="menu-item">Lien 3</a>
-				<a href="#" class="menu-item">Lien 4</a>
+				<a href="#" class="menu-item">Link 1</a>
+				<a href="#" class="menu-item">Link 2</a>
+				<a href="#" class="menu-item">Link 3</a>
+				<a href="#" class="menu-item">Link 4</a>
 			</div>
 			<div class="col-6 content">
 				<h2>Content</h2>

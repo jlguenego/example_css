@@ -7,7 +7,8 @@ block {
 	display: block;
 }
 
-float-left, float-right {
+float-left,
+float-right {
 	display: block;
 	width: 100px;
 	height: 30px;
@@ -18,17 +19,21 @@ float-left {
 	float: left;
 	background-color: #eee;
 }
+
 float-right {
 	float: right;
 	margin: 10px;
 	background-color: #ddd;
 }
 
+
+/* This clearfix stuff must be known by every CSS developper ! */
 .clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
+	content: "";
+	clear: both;
+	display: table;
 }
- b {
-	 border: none;
- }
+
+b {
+	border: none;
+}
