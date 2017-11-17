@@ -63,11 +63,7 @@ body {
     width: calc(3 * 100% / 12 - 10px);
 }
 
-.mobile {
-    display: none;
-}
-
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 48em) {
     /* For mobile phones: */
     .row {
         flex-direction: column;
@@ -75,12 +71,6 @@ body {
     [class*="col-"],
     .grid-background .col-1 {
         width: 100%;
-    }
-    .desktop {
-        display: none;
-    }
-    .mobile {
-        display: block;
     }
 }
 

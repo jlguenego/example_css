@@ -1,0 +1,12 @@
+.mobile {
+    display: none;
+}
+
+@media only screen and (max-width: 48em) {
+    .desktop {
+        display: none;
+    }
+    .mobile {
+        display: block;
+    }
+}
