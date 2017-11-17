@@ -1,2 +1,21 @@
-body{background-color:#cef}
+* {
+  margin: 0;
+  box-sizing: border-box; }
+
+body {
+  padding: 1em; }
+
+body {
+  background-color: #ccffcc; }
+  body ul {
+    border: 1px solid black; }
+    body ul li {
+      font-size: 1.2em; }
+      @media screen and (max-width: 48em) {
+        body ul li {
+          color: green; } }
+      @media screen and (min-width: 48em) {
+        body ul li {
+          color: black; } }
+
 /*# sourceMappingURL=scss-bundle.css.map*/

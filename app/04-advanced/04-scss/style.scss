@@ -1,10 +1,18 @@
 @import "./reset.scss";
-
+@import "./responsive.scss";
 $hue: 120;
-
 body {
     background-color: hsl($hue, 100%, 90%);
     ul {
         border: 1px solid black;
+        li {
+            font-size: 1.2em;
+            @include screen(mobile) {
+                color: green;
+            }
+            @include screen(desktop) {
+                color: black;
+            }
+        }
     }
 }

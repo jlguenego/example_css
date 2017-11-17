@@ -1,0 +1,18 @@
+// Define the breakpoints
+$breakpoint: 48em;
+
+@mixin screen($type) {
+  @if $type == 'mobile' {
+    @media screen and (max-width: $breakpoint) {
+        @content;
+    }
+  }
+  @else if $type == 'desktop' {
+    @media screen and (min-width: $breakpoint) {
+        @content;
+    }
+  }
+  @else {
+    @content;
+  }
+}
