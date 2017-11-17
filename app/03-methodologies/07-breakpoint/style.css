@@ -2,13 +2,13 @@ body, html {
     font-size: 100%;
 }
 
-@media (min-width: 48em) {
+@media (min-width: 48rem) {
     .mobile {
         display: none !important;
     }
 }
 
-@media (max-width: 48em) {
+@media (max-width: 48rem) {
     .desktop {
         display: none !important;
     }
