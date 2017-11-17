@@ -1,2 +1,12 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  padding: 1em;
+}
+body {
+  background-color: #ccffcc;
+}
 
 /*# sourceMappingURL=less-bundle.css.map*/
