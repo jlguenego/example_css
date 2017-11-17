@@ -4,30 +4,40 @@
     box-sizing: border-box;
 }
 
-.blue,
-.green,
-.yellow {
-    display: inline-block;
+body {
+    padding: 0.5rem;
+}
+
+.container {
+    display: block;
+    padding: 0.5rem;
+    border: 1px solid black;
+}
+
+.float-left,
+.float-right {
     width: 250px;
     height: 250px;
 }
 
-.blue {
+.float-left {
     float: left;
     background-color: lightblue;
 }
 
-.yellow {
+.float-right {
     float: right;
     background-color: lightgoldenrodyellow;
 }
 
-.green {
-    background-color: lightseagreen;
-}
-
-.container:after {
+.clearfix {
     content: "";
     display: table;
     clear: both;
 }
+
+/* .container::after {
+    content: "";
+    display: table;
+    clear: both;
+} */

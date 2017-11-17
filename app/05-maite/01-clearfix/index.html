@@ -4,17 +4,38 @@
 <head>
 	<meta charset="utf-8">
 	<title>Clear fix</title>
-	<link id="css" rel="stylesheet" href="grid-inline-block.css" />
 	<link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
+	<label>
+		Clearfix
+		<select>
+			<option>Without</option>
+			<option>With</option>
+		</select>	
+	</label>
+
 	<div class="container">
-		<div class="blue"></div>
-		<div class="yellow"></div>
+		<div class="float-left"></div>
+		<div class="float-left"></div>
+		<div class="float-right"></div>
 	</div>
 
-	<div class="green"></div>
+	<script>
+		var select = document.querySelector('select');
+		select.addEventListener('change', function () {
+			console.log('change');
+
+			var container = document.querySelector('.container');
+
+			if (select.value === 'With') {
+				container.className = "container clearfix";
+			} else {
+				container.className = "container";
+			}
+		});
+	</script>
 </body>
 
 </html>

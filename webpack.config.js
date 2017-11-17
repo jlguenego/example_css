@@ -2,6 +2,16 @@ const webpack = require('webpack');
 const path = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
+var less = require('less');
+
+less.render('.class { width: (1 + 1) }', {
+        paths: ['.', './lib'], // Specify search paths for @import directives
+        filename: 'style.less', // Specify a filename, for better error messages
+    },
+    function (e, output) {
+        console.log(output.css);
+    });
+
 module.exports = {
     entry: {
         vendor: './app/05-maite/04-webpack',
