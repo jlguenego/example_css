@@ -1,7 +1,3 @@
-body, html {
-    font-size: 100%;
-}
-
 @media (min-width: 48rem) {
     .mobile {
         display: none !important;
