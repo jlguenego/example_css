@@ -1,18 +1,13 @@
 // Define the breakpoints
-$breakpoint: 48em;
+@breakpoint: 48em;
 
-@mixin screen($type) {
-  @if $type == 'mobile' {
-    @media screen and (max-width: $breakpoint) {
-        @content;
-    }
+.mobile(@rules) {
+  @media screen and (max-width: @breakpoint) {
+    @rules();
   }
-  @else if $type == 'desktop' {
-    @media screen and (min-width: $breakpoint) {
-        @content;
-    }
+};
+.desktop(@rules) {
+  @media screen and (min-width: @breakpoint + 1) {
+    @rules();
   }
-  @else {
-    @content;
-  }
-}
+};

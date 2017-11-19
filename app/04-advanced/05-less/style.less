@@ -1,12 +1,12 @@
 // Import
 @import "./reset.less";
-// @import "./responsive.scss";
+@import "./responsive.less";
 
-// // Variables
+// Variables
 @hue: 120;
-@background-color: red;
+@background-color: blue;
 
-// // Nesting
+// Nesting
 body {
     background-color: hsl(@hue, 100%, 90%);
     ul {
@@ -14,25 +14,29 @@ body {
         li {
             font-size: 1.2em;
 
-            // Use a mixins (kind of custom function in SCSS)
-            // @include screen(mobile) {
-            //     color: green;
-            // }
-            // @include screen(desktop) {
-            //     color: black;
-            // }
+            .mobile({
+                color: green;
+            });
+            .desktop({
+                color: black;
+            });
         }
     }
 }
 
-// .message {
-//     border: 1px solid #ccc;
-//     padding: 10px;
-//     background-color: lighten($background-color, 45);
-// }
+.message {
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: lighten(@background-color, 45);
+}
 
-// // Heritage
-// .success {
-//     @extend .message;
-//     background-color: lighten(green, 45);
-// }
+// Heritage
+.success {
+    // &:extend(.message);
+    .message; // use of a mixin.
+    background-color: lighten(green, 45);
+}
+
+// Variable in lazy evaluation.
+// warning: this overrides the previous value if already defined...
+@background-color: red;
