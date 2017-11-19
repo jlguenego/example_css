@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Nesting perf test</title>
+</head>
+
+<body>
+    <label class="paragraph">Skin:
+        <select>
+            <option>simple</option>
+            <option>nesting</option>
+        </select>
+    </label>
+    <button onclick="add(1000)">add 1000</button>
+    <button onclick="stop()">stop</button>
+    <button onclick="start()">start</button>
+    <div>
+        <div>
+            <div>
+                <div>
+                    <div>
+                        <div>
+                            <div>
+                                <div>
+                                    <div id="text">
+                                        <span>Test nest perf</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script>
+        var running = true;
+        var select = document.querySelector('select');
+        var nested = false;
+        select.addEventListener('change', function () {
+            nested = select.value === 'nesting';
+            console.log('nested', nested);
+        });
+
+        function add(n) {
+            for (var i = 0; i < n; i++) {
+                var span = document.createElement('span');
+                span.innerHTML = "Test nest perf"
+                document.querySelector('#text').appendChild(span);
+            }
+        }
+
+        add(1000);
+
+        function stop() {
+            running = false;
+        }
+
+        function start() {
+            running = true;
+            window.requestAnimationFrame(update);
+        }
+
+        document.querySelector('head').appendChild(document.createElement('style'));
+        var s = document.styleSheets[0];
+
+
+        var frameId = 0;
+        var rule;
+        var index;
+
+        function update() {
+            console.log('index', index);
+            if (index !== undefined) {
+                s.deleteRule(index);
+            }
+
+            var fontSize = 8 + (frameId % 2);
+
+            if (nested) {
+                rule = `body div div div div span { color: red; font-size: ${fontSize}px; }`;
+                index = s.insertRule(rule);
+            } else {
+                rule = `span { color: blue; font-size: ${fontSize}px; }`;
+                index = s.insertRule(rule);
+            }
+            console.log('s', s);
+            console.log('requestAnimationFrame', frameId++);
+
+            if (running) {
+                window.requestAnimationFrame(update);
+            }
+
+        }
+
+        // start();
+    </script>
+</body>
+
+</html>
