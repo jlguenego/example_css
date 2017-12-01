@@ -15,28 +15,28 @@
     <button onclick="add(1000)">add 1000</button>
     <button onclick="stop()">stop</button>
     <button onclick="start()">start</button>
-    <div>
-        <div>
-            <div>
-                <div>
-                    <div>
-                        <div>
-                            <div>
-                                <div>
-                                    <div id="text">
-                                        <span>Test nest perf</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
+    <div1>
+        <div2>
+            <div3>
+                <div4>
+                    <div5>
+                        <div6>
+                            <div7>
+                                <div8>
+                                    <div9>
+                                        <div id="text">
 
-
+                                        </div>
+                                    </div9>
+                                </div8>
+                            </div7>
+                        </div6>
+                    </div5>
+                </div4>
+            </div3>
+        </div2>
+    </div1>
 
     <script>
         var running = true;
@@ -48,10 +48,17 @@
         });
 
         function add(n) {
+            
             for (var i = 0; i < n; i++) {
+                var parent =  document.querySelector('body');
+                for (var j = 1; j <= 9; j++) {
+                    var div = document.createElement('div' + j);
+                    parent.appendChild(div);
+                    parent = div;
+                }
                 var span = document.createElement('span');
                 span.innerHTML = "Test nest perf"
-                document.querySelector('#text').appendChild(span);
+                parent.appendChild(span);
             }
         }
 
@@ -83,7 +90,8 @@
             var fontSize = 8 + (frameId % 2);
 
             if (nested) {
-                rule = `body div div div div span { color: red; font-size: ${fontSize}px; }`;
+                rule =
+                    `body div1 div2 div3 div4 div5 div6 div7 div8 div9 span { color: red; font-size: ${fontSize}px; }`;
                 index = s.insertRule(rule);
             } else {
                 rule = `span { color: blue; font-size: ${fontSize}px; }`;
