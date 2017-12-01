@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Critical Rendering Path</title>
+	<link rel="stylesheet" href="style.css" media="print" />
+</head>
+
+<body>
+	<div class="width green border shadow float">critical</div>
+	<!-- <div><img src="https://images.unsplash.com/photo-1470138831303-3e77dd49163e?auto=format&fit=crop&w=1050&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D"></div> -->
+	<script src="main.js"></script>
+	<div class="width green border shadow float">rendering</div>
+	<script src="main2.js"></script>
+	<div class="width green border shadow float">path</div>
+	<h2>Notes</h2>
+	<ul>
+		<li>This example uses its own server: please run <code>npm run start0408</code></li>
+		<li>Remove media print to put the style.css on the critical rendering path</li>
+		<li>Update server.js : update the timeout of style.css from 4000 to 1000.</li>
+	</ul>
+</body>
+
+</html>

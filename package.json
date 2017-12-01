@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "bs": "browser-sync start --config bs-config.js"
+    "bs": "browser-sync start --config bs-config.js",
+    "start0408": "node app/04-advanced/08-loading/server.js"
   },
   "keywords": [],
   "author": "",
