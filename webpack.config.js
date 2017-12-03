@@ -7,6 +7,7 @@ module.exports = {
         'scss-bundle': './app/04-advanced/04-scss/style.scss',
         'less-bundle': './app/04-advanced/05-less/style.less',
         'uncss-bundle': './app/04-advanced/07-uncss/style.css',
+        'postcss-bundle': './app/04-advanced/09-postcss/style.css',
     },
     output: {
         filename: '[name].js',
