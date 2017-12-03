@@ -4,4 +4,14 @@
 
 h1 {
     color: var(--main-bg-color);
+    animation: fade-in 2s;
+}
+
+@keyframes fade-in {
+        from {
+                opacity: 0;
+        }
+        to {
+                opacity: 1;
+        }
 }
